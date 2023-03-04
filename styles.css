@@ -1,0 +1,27 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.EtchASketch {
+    display: flex;
+    flex-wrap: wrap;
+    height: 960px;
+    width: 960px;
+}
