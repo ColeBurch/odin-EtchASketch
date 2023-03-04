@@ -1,4 +1,12 @@
 const etchASketch = document.querySelector(".etchASketch")
+const reset = document.querySelector(".reset")
+
+reset.addEventListener('click', () => {
+    cube.forEach((div) => {
+        div.classList.remove('colored')
+        div.classList.add('white')
+    })
+})
 
 for (let i = 0; i < 256; i++) {
     const createCube = document.createElement('div')
