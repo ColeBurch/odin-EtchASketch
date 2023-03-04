@@ -24,4 +24,5 @@ html, body {
     flex-wrap: wrap;
     height: 960px;
     width: 960px;
+    background-color: black;
 }
