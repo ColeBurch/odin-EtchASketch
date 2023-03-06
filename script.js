@@ -14,23 +14,7 @@ changeBoard.addEventListener('click', () => {
     changeGrid()
 })
 
-for (let i = 0; i < 256; i++) {
-    let createCube = document.createElement('div')
-    createCube.classList.add('cube')
-    createCube.style.cssText = 'height: 58px; width: 58px; margin: 1px;'
-    createCube.classList.add('white')
-    etchASketch.appendChild(createCube)
-}
-
-let cube = document.querySelectorAll(".cube")
-console.log(cube)
-
-cube.forEach((div) => {
-    div.addEventListener('mouseover', () => {
-        div.classList.remove('white')
-        div.classList.add('colored')
-    })
-})
+window.onload = changeGrid
 
 function changeGrid() {
     let num = prompt("How many elements in each row?")
